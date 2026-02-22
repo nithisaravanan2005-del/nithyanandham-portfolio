@@ -2,23 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    background: #0f172a;
-    color: white;
-    scroll-behavior: smooth;
+    background: #111827;
+    color: #f3f4f6;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background: #1e293b;
-    position: sticky;
-    top: 0;
+    padding: 20px 60px;
+    background: #1f2937;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f59e0b;
 }
 
 nav ul {
@@ -27,70 +30,73 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #f3f4f6;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #38bdf8;
+    color: #f59e0b;
 }
 
-.hero {
-    height: 90vh;
+.home-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #1e3a8a, #0f172a);
-    text-align: center;
+    padding: 80px 60px;
 }
 
-.hero span {
-    color: #38bdf8;
+.home-text h1 {
+    font-size: 48px;
+}
+
+.home-text span {
+    color: #f59e0b;
+}
+
+.home-text h3 {
+    margin-top: 10px;
+    color: #9ca3af;
+}
+
+.home-text p {
+    margin-top: 15px;
+    max-width: 400px;
+}
+
+.buttons {
+    margin-top: 20px;
 }
 
 .btn {
-    margin-top: 20px;
     padding: 10px 20px;
-    background: #38bdf8;
+    background: #f59e0b;
     color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    border: 2px solid #f59e0b;
+    color: #f59e0b;
     text-decoration: none;
     border-radius: 5px;
 }
 
-section {
-    padding: 80px 50px;
-    text-align: center;
-}
-
-.skills-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.skills-container div {
-    background: #1e293b;
-    padding: 15px 25px;
-    border-radius: 5px;
-}
-
-.project-card {
-    background: #1e293b;
-    padding: 20px;
-    margin: 20px auto;
+.home-image img {
     width: 300px;
     border-radius: 10px;
 }
 
 footer {
+    text-align: center;
     padding: 20px;
-    background: #1e293b;
+    background: #1f2937;
+    margin-top: 50px;
 }
