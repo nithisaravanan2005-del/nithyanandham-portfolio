@@ -54,7 +54,8 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:100px 100px;
+    padding:70px 100px 40px 100px;
+    min-height:75vh;
 }
 
 .hero-text{
@@ -134,7 +135,7 @@ body{
     display:flex;
     justify-content:center;
     gap:40px;
-    padding:80px;
+    padding:40px 80px 80px 80px;
 }
 
 .card{
