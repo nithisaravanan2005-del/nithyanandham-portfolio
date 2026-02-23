@@ -516,3 +516,29 @@ footer{
         padding:80px 20px;
     }
 }
+
+/* Education Section */
+.education {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.education-card h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.education-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
