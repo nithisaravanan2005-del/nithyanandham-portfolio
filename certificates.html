@@ -5,8 +5,8 @@
 <title>Certificates | Nithyanandham</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -26,41 +26,48 @@
 
 <section class="certificate-section">
 
-    <h1>My Certifications</h1>
-    <p class="certificate-sub">
-        A collection of certifications that validate my technical expertise and continuous learning.
-    </p>
+<h1>My Certifications</h1>
 
-    <div class="certificate-grid">
+<div class="filter-buttons">
+    <button onclick="filterSelection('all')">All</button>
+    <button onclick="filterSelection('java')">Java</button>
+    <button onclick="filterSelection('ai')">AI</button>
+    <button onclick="filterSelection('web')">Web</button>
+    <button onclick="filterSelection('sql')">SQL</button>
+    <button onclick="filterSelection('others')">Others</button>
+</div>
 
-        <div class="certificate-card">
-            <a href="assets/certificates/java.jpg" target="_blank">
-                <img src="assets/certificates/java.jpg" alt="Java Certificate">
-            </a>
-            <h3>Java Programming</h3>
-        </div>
+<div class="certificate-grid">
 
-        <div class="certificate-card">
-            <a href="assets/certificates/webdev.jpg" target="_blank">
-                <img src="assets/certificates/webdev.jpg" alt="Web Development Certificate">
-            </a>
-            <h3>Web Development</h3>
-        </div>
-
-        <div class="certificate-card">
-            <a href="assets/certificates/hackerrank.jpg" target="_blank">
-                <img src="assets/certificates/hackerrank.jpg" alt="HackerRank Certificate">
-            </a>
-            <h3>HackerRank Certification</h3>
-        </div>
-
+    <!-- JAVA -->
+    <div class="certificate-card java">
+        <img src="assets/certificates/java/java1.jpg">
     </div>
+
+    <div class="certificate-card java">
+        <img src="assets/certificates/java/java2.jpg">
+    </div>
+
+    <!-- AI -->
+    <div class="certificate-card ai">
+        <img src="assets/certificates/ai/ai1.jpg">
+    </div>
+
+    <!-- WEB -->
+    <div class="certificate-card web">
+        <img src="assets/certificates/web/web1.jpg">
+    </div>
+
+    <!-- SQL -->
+    <div class="certificate-card sql">
+        <img src="assets/certificates/sql/sql1.jpg">
+    </div>
+
+</div>
 
 </section>
 
-<footer>
-    <p>© 2026 Nithyanandham S | All Rights Reserved</p>
-</footer>
+<script src="js/script.js"></script>
 
 </body>
 </html>
