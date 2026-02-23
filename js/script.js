@@ -3,6 +3,27 @@ let typingElement = document.querySelector(".typing");
 let index = 0;
 let charIndex = 0;
 
+function filterSelection(category) {
+    let cards = document.getElementsByClassName("certificate-card");
+
+    if(category === "all"){
+        for(let i = 0; i < cards.length; i++){
+            cards[i].style.display = "block";
+        }
+    } else {
+        for(let i = 0; i < cards.length; i++){
+            cards[i].style.display = "none";
+        }
+
+        let selected = document.getElementsByClassName(category);
+        for(let i = 0; i < selected.length; i++){
+            selected[i].style.display = "block";
+        }
+    }
+}
+
+filterSelection("all");
+
 function type() {
     if (charIndex < textArray[index].length) {
         typingElement.textContent += textArray[index].charAt(charIndex);
