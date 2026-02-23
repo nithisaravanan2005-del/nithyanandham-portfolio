@@ -542,3 +542,16 @@ footer{
     font-size: 16px;
     color: #555;
 }
+
+
+/* Remove space above About section */
+.about-section {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Remove default margin from heading */
+.about-section h1,
+.about-section h2 {
+    margin-top: 0;
+}
