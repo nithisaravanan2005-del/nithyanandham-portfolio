@@ -22,6 +22,32 @@ function filterSelection(category) {
     }
 }
 
+function filterSelection(category) {
+    let cards = document.getElementsByClassName("certificate-card");
+    let buttons = document.querySelectorAll(".filter-buttons button");
+
+    buttons.forEach(btn => btn.classList.remove("active-filter"));
+
+    if(category === "all"){
+        for(let i = 0; i < cards.length; i++){
+            cards[i].style.display = "block";
+        }
+    } else {
+        for(let i = 0; i < cards.length; i++){
+            cards[i].style.display = "none";
+        }
+
+        let selected = document.getElementsByClassName(category);
+        for(let i = 0; i < selected.length; i++){
+            selected[i].style.display = "block";
+        }
+    }
+
+    event.target.classList.add("active-filter");
+}
+
+filterSelection("all");
+
 filterSelection("all");
 
 function type() {
